@@ -37,16 +37,16 @@ public class JetsApplication {
 			air.loadAllCargo();
 			break;
 		case 6:
-			System.out.println();
+			air.makeJetsFight();
 			break;
 		case 7:
 			air.addJet();
 			break;
 		case 8:
-			System.out.println();
+			System.out.println("Good Bye!!!");
 			break;
 		default:
-			System.out.println();
+			System.out.println("Wrong Choice!!");
 		}}while(choice !=8);
 		sc.close();
 	}

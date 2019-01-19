@@ -9,6 +9,7 @@ public class AirField {
 		myJetList[0] = new CargoPlane("C-130",368,2361,30_000_000);
 		myJetList[1] = new FighterJet("T-38",858,2300,6_173_000);
 		myJetList[2] = new CargoPlane("KC-135",580,1500,39_600_000);
+		myJetList[3] = new FighterJet("F-22 Raptor",858,2300,6_173_000);
 		
 	};
 	
@@ -61,7 +62,7 @@ public class AirField {
 				tempLong = jet;
 			}
 		}
-		System.out.println("The fastest jet is " + tempLong.getModel() + "\nFull Information: ");
+		System.out.println(tempLong.getModel() +" has the longest range " + "\nFull Information: ");
 		tempLong.listInfoJet();
 	}
 	
@@ -91,19 +92,18 @@ public class AirField {
 			if(myJetList[i] == null) {
 				myJetList[i] = newCustomJet;
 				break;
-			}
-			
-			
-			
+			}	
 		}
+		
 	}
 	
-//	"MyCustomJet",2,3,3_000_000
 	
-	
-
-	
-	
-	
-
+	public void makeJetsFight() {
+		for (Jet jet : myJetList) {
+			if(jet != null && jet instanceof FighterJet) {
+				FighterJet temp = (FighterJet) jet;
+				temp.fight();						
+			}
+		}
+	}
 }
