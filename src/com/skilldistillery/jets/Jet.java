@@ -17,9 +17,14 @@ public abstract class Jet {
 		System.out.println(this.model + "   flyiingggg!!!!!!   ");
 	}
 	
-	public void listFleet(){
+	public void listInfoJet(){
 		System.out.println("Model is " + this.model + ", speed is " +this.speed + ", range is " +this.range + ", price is " + this.price);
 	}
+	
+//	public Jet addJet(String model, int speed, int range, long price) {
+//		JetImpl newJet = new JetImpl();
+//		return newJet;
+//	}
 
 	public String getModel() {
 		return model;
