@@ -10,6 +10,7 @@ public class AirField {
 		myJetList[1] = new FighterJet("T-38",858,2300,6_173_000);
 		myJetList[2] = new CargoPlane("KC-135",580,1500,39_600_000);
 		myJetList[3] = new FighterJet("F-22 Raptor",858,2300,6_173_000);
+		myJetList[4] = new FighterJet("F-16",1500,2622,18_800_000);
 		
 	};
 	
@@ -94,6 +95,7 @@ public class AirField {
 				break;
 			}	
 		}
+		
 		
 	}
 	

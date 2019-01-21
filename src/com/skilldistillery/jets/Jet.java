@@ -14,11 +14,45 @@ public abstract class Jet {
 	}
 	
 	public void fly(){
-		System.out.println(this.model + "   flyiingggg!!!!!!   ");
+		System.out.print( "\t" +this.model );
+		System.out.println(" is Ready to take off  ");
+		System.out.println("__|__\n" + 
+				"\\___/\n" + 
+				" | |\n" + 
+				" | |\n" + 
+				"_|_|______________\n" + 
+				"        /|\\ \n" + 
+				"      */ | \\*\n" + 
+				"      / -+- \\\n" + 
+				"  ---o--(_)--o---\n" + 
+				"    /  0 \" 0  \\\n" + 
+				"  */     |     \\*\n" + 
+				"  /      |      \\\n" + 
+				"*/       |       \\*");
+		System.out.println("\n\n\n");
+		System.out.println(".......And Flyyyyiingggg");
+		System.out.println("          _  _\n" + 
+				"         ( `   )_\n" + 
+				"        (    )    `)\n" + 
+				"      (_   (_ .  _) _)\n" + 
+                "                    __|__ \n" + 
+                "		\"*---o0o---*"+
+				"                                     _\n" + 
+				"                                    (  )\n" + 
+				"     _ .                         ( `  ) . )\n" + 
+				"   (  _ )_                      (_, _(  ,_)_)\n" + 
+				" (_  _(_ ,)");
+
+	System.out.println("");
 	}
 	
 	public void listInfoJet(){
-		System.out.println("Model is " + this.model + ", speed is " +this.speed + ", range is " +this.range + ", price is " + this.price);
+		if(this.price >=1000000.0) {
+			System.out.println("Model is " + this.model + ", speed is " +this.speed + " mph " + ", range is " +this.range + " mi " +", price is " + String.format("%.2fM", this.price/ 1000000.0));
+
+		}else {
+			System.out.println("Model is " + this.model + ", speed is " +this.speed + " mph " + ", range is " +this.range + " mi " +", price is " +  String.format("%,d",this.price));
+		}
 	}
 
 	public String getModel() {
