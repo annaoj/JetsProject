@@ -7,6 +7,7 @@ There are 5 is loaded initially and user can add 5 more.
 Menu example:
 
 What would you like to do?
+
 1. List fleet
 2. Fly all jets
 3. View fastest jet
@@ -14,7 +15,8 @@ What would you like to do?
 5. Load all Cargo Jets
 6. Dogfight!
 7. Add a jet to Fleet
-8. Quit 
+8. Fly individual jet
+9. Quit 
 
 
 ### Technologies/Topics

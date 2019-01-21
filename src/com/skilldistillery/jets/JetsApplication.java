@@ -16,7 +16,7 @@ public class JetsApplication {
 			System.out.println("What would you like to do?");
 			System.out.println(
 					"1. List fleet\n" + "2. Fly all jets\n" + "3. View fastest jet\n" + "4. View jet with longest range\n"
-							+ "5. Load all Cargo Jets\n" + "6. Dogfight!\n" + "7. Add a jet to Fleet\n" + "8. Quit");
+							+ "5. Load all Cargo Jets\n" + "6. Dogfight!\n" + "7. Add a jet to Fleet\n" + "8. Fly individual jet\n" +"9. Quit\n ");
 
 			choice = sc.nextInt();
 			
@@ -43,6 +43,9 @@ public class JetsApplication {
 			air.addJet();
 			break;
 		case 8:
+			air.flyIndividualJet();
+			break;
+		case 9:
 			System.out.println("Good Bye!!!");
 			break;
 		default:

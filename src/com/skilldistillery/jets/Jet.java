@@ -48,10 +48,10 @@ public abstract class Jet {
 	
 	public void listInfoJet(){
 		if(this.price >=1000000.0) {
-			System.out.println("Model is " + this.model + ", speed is " +this.speed + " mph " + ", range is " +this.range + " mi " +", price is " + String.format("%.2fM", this.price/ 1000000.0));
+			System.out.println("Model is " + this.model + ",speed is " +this.speed + " mph " + ",range is " +this.range + " mi " +",price is " + String.format("%.2fM", this.price/ 1000000.0));
 
 		}else {
-			System.out.println("Model is " + this.model + ", speed is " +this.speed + " mph " + ", range is " +this.range + " mi " +", price is " +  String.format("%,d",this.price));
+			System.out.println("Model is " + this.model + ",speed is " +this.speed + " mph " + ",range is " +this.range + " mi " +",price is " +  String.format("%,d",this.price));
 		}
 	}
 

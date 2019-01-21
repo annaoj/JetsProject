@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AirField {
 	Jet[] myJetList = new Jet[10];
+	Scanner sc = new Scanner(System.in);
 
 	public AirField() {
 		myJetList[0] = new CargoPlane("C-130", 368, 2361, 30_000_000);
@@ -37,7 +38,7 @@ public class AirField {
 		int count = 0;
 		for (Jet jet : myJetList) {
 			if (jet != null) {
-
+				System.out.print(count + 1 + ") ");
 				jet.listInfoJet();
 				count = count + 1;
 			}
@@ -74,7 +75,6 @@ public class AirField {
 		long price;
 		int type;
 
-		Scanner sc = new Scanner(System.in);
 		System.out.println("Is it Fighter Jet (1) or Cargo plane (2) :");
 		type = sc.nextInt();
 		System.out.println("What is the model of your plane? : ");
@@ -98,7 +98,7 @@ public class AirField {
 		} else {
 			System.out.println("Wrong input");
 		}
-		
+
 		for (int i = 0; i < myJetList.length; i++) {
 			if (myJetList[i] == null) {
 				myJetList[i] = newCustomJet;
@@ -115,5 +115,19 @@ public class AirField {
 				temp.fight();
 			}
 		}
+	}
+
+	public void flyIndividualJet() {
+		System.out.println("Which Jet would you like to fly?Choose number: \n");
+		listFleet();
+		System.out.println("\n Please choose number: \n");
+		int input = sc.nextInt();
+		for (int i = 0; i < myJetList.length; i++) {
+			if (input - 1 == i) {
+				myJetList[i].fly();
+				break;
+			}
+		}
+
 	}
 }
